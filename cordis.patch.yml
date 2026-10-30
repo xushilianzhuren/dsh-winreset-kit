@@ -1,0 +1,6 @@
+- insert:
+    - id: winreset-kit
+      name: 'dsh-winreset-kit'
+      config:
+        enabled: true
+        tool: true

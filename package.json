@@ -1,0 +1,37 @@
+{
+  "name": "dsh-winreset-kit",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Windows开机密码恢复工具箱：微软账户在线重置/PIN/SAM/Utilman/PE方案树·授权硬门 Windows password recovery playbook (own/authorized devices only): MS account reset, PIN, SAM, Utilman, PE.",
+  "license": "MIT",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "windows",
+    "recovery",
+    "password-reset",
+    "pe"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@antinomyhq/forge": "*"
+  }
+}
